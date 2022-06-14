@@ -215,8 +215,8 @@
                                             <option value="">Select</option>
                                             <option value="426x240">426x240 (24p)</option>
                                             <option value="640x360">640x360 (360p)</option>
-                                            <option value=" 854x480"> 854x480 (480)</option>
-                                            <option value=" 1280x720"> 1280x720 (720)</option>
+                                            <option value="854x480"> 854x480 (480)</option>
+                                            <option value="1280x720"> 1280x720 (720)</option>
                                             <option value="1920x1080">1920x1080 (1080)</option>
                                         </select>
                                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
