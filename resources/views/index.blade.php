@@ -103,7 +103,7 @@
                                 <div>
                                     <p class="font-bold"> Video compression successful!</p>
                                     <p class="font-bold"> size: {{session('result:size')}}</p>
-                                    <p class="font-bold text-blue-300"> <a href="{{session('result:link')}}"> Play video</a></p>
+                                    <p class="font-bold text-blue-300"> <a href="{{session('result:link')}}" target="_blank"> Play video</a></p>
                                     <p class="text-sm">Video will be deleted periodically to free up disk space.</p>
                                 </div>
                             </div>
