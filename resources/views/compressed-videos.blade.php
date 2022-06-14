@@ -33,58 +33,52 @@
                 </div>
             </div>
         </nav>
-        <div class="overflow-hidden border p-5 lg:p-20 flex justify-center">
-            {{-- <div class="max-w-sm w-full lg:max-w-full lg:flex"> --}}
-
-
-            {{-- <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                    <div class="border-gray-400 bg-gray-200 rounded-b pl-5 flex justify-enter leading-normal"> --}}
-            {{-- <div class=" -mx-3 mb-2 p-2"> --}}
-            {{-- <h2 class="block uppercase tracking-wide text-gray-700 text-lg font-bold mb-2 px-3">
-                        Start Testing
-                    </h2>
+        <div class="p-5 lg:m-20 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+            <strong class="font-bold">Holy smokes!</strong>
+            <span class="block sm:inline">This page is still being worked on.</span>
+            <span class="block sm:inline">When finished, you can see conversions done on a particular video and how their sizes vary.</span>
+            <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+                <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <title>Close</title>
+                    <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
+                </svg>
+            </span>
+        </div>
+        <div class="overflow-hidden p-5 lg:p-20 flex justify-center">
+            <table class="table-fixed text-sm  text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th class="px-6 py-3">
+                            File Name
+                        </th>
+                        <th class="px-6 py-3">
+                            Compressions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
                     @foreach($videos as $video)
-                    <div class="flex flex-row">
-                        <div class="basis-1/4 p-2 m-2"> {{$video->original_name}}</div>
-        <div class="basis-1/4 p-2 m-2">{{$video->size_m_b}}</div>
-        <div class="basis-1/2 p-2 m-2">{{$video->original_name}}</div>
-    </div>
-    @endforeach --}}
+                    <tr class="text-left bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 
-    <table class="table-fixed text-sm  text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th class="px-6 py-3">
-                    File Name
-                </th>
-                <th class="px-6 py-3">
-                    Compressions
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($videos as $video)
-            <tr class="text-left bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-
-                <th class="px-4 py-4 font-medium text-gray-900 dark:text-white">
-                    {{$video->original_name}} - {{$video->size_m_b}}
-                </th>
-                <td class="px-6 py-4 ">
-                    <a target="_blank" href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">{{$video->original_name}}</a>,
-                    <a target="_blank" href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">{{$video->original_name}}</a>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+                        <th class="px-4 py-4 font-medium text-gray-900 dark:text-white">
+                            {{$video->original_name}} - {{$video->size_m_b}}
+                        </th>
+                        <td class="px-6 py-4 ">
+                            <a target="_blank" href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">{{$video->original_name}}</a>,
+                            <a target="_blank" href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">{{$video->original_name}}</a>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
 
 
-    {{-- </div> --}}
-    {{-- </div> --}}
-    {{-- </div> --}}
+            {{-- </div> --}}
+            {{-- </div> --}}
+            {{-- </div> --}}
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    {{-- <script>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            {{-- <script>
             $(document).ready(function() {
                 $("#compressionType").on('change', function() {
                     if ($(this).val() == 4) {
