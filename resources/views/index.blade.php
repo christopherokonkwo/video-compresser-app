@@ -180,8 +180,6 @@
                                             <option value="400k">400Kbps</option>
                                             <option value="700k">700Kbps</option>
                                             <option value="1000k">1000Kbps</option>
-                                            <option value="700k">360p</option>
-                                            <option value="1250k">480p</option>
                                         </select>
                                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
